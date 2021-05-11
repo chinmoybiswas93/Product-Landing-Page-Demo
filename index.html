@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Product Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>         
+
+<body>
+
+    <div id="main">
+
+        <header id="header">
+            <div class="logo">
+               <img src="logo.png" alt="Demo Logo" id="header-img">
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li> <a href="#hero" class="nav-link">Home</a> </li>
+                    <li> <a href="#services" class="nav-link">Services</a> </li>
+                    <li> <a href="#process" class="nav-link">Process</a> </li>
+                    <li> <a href="#pricing" class="nav-link">Pricing</a> </li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <section id="hero">
+            <h2>Life insurance that fits your life</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Maxime, magnam blanditiis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam ad mollitia laboriosam sit ut corporis? </p>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="text" id="name" name="name" placeholder="Your Name: ">
+                <input type="email" id="email" name="email" placeholder="Your Email:">
+                <input id="submit" type="submit" value="Get Started" class="btn">
+            </form>
+        </section>
+
+        <div class="container">
+            <section id="services">
+                <div class="grid">
+                    <div class="icon">
+                        <img src="invest.png">
+                    </div>
+                    <div class="description">
+                        <h2>Invest - Get a personalized portfolio</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, quisquam?</p>
+                        <button class="explore-btn btn">Explore..</button>
+                    </div>
+                </div>
+                
+                <div class="grid">
+                    <div class="icon">
+                        <img src="https://i.imgur.com/oSOB9yQ.png">
+                    </div>
+                    <div class="description">
+                        <h2>Insure - Affortable protection for your family</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="explore-btn btn">Explore..</button>
+                    </div>
+                </div>
+            
+                <div class="grid">
+                    <div class="icon">
+                        <img src="retire.png">
+                    </div>
+                    <div class="description">
+                        <h2>Retire - Plan your long-term goals</h2>
+                        <p>Traditional, Roth or rollover IRAs – get a portfolio aligned with your goals, managed by investments professionals.</p>
+                        <button class="explore-btn btn">Explore..</button>
+                    </div>
+                </div>
+                
+                <div class="grid">
+                    <div class="icon">
+                        <img src="plan.png">
+                    </div>
+                    <div class="description">
+                        <h2>Plan - Set goals and take action.</h2>
+                        <p>Lay out your financial roadmap. Easy to get started, easy to update and you can always talk to an advisor.</p>
+                        <button class="explore-btn btn">Explore..</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="process">
+                <h3>Watch This<br>You will get all info needed.</h3>
+                <iframe id="video" src="https://www.youtube-nocookie.com/embed/uPqNNshSA9I?controls=0&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus placeat, esse quisquam est similique eaque mollitia quod tempora architecto dolore voluptatum hic dignissimos ab libero? Necessitatibus atque facilis cupiditate! Laudantium.</p>
+            </section>
+
+            <section id="pricing">
+                <div class="product" id="tenor">
+                  <div class="level">Tenor Trombone</div>
+                    <h2>$600</h2>
+                    <ol>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ol>
+                  <button class="btn price-btn">Select</button>
+                </div>
+
+                <div class="product" id="bass">
+                  <div class="level">Bass Trombone</div>
+                    <h2>$900</h2>
+                    <ol>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum dolor.</li>
+                        <li>Lorem ipsum.</li>
+                    </ol>
+                    <button class="btn price-btn">Select</button>
+                </div>
+
+                <div class="product" id="valve">
+                  <div class="level">Valve Trombone</div>
+                  <h2>$1200</h2>
+                  <ol>
+                    <li>Plays similar to a Trumpet</li>
+                    <li>Great for Jazz Bands</li>
+                    <li>Lorem ipsum dolor.</li>
+                    <li>Lorem ipsum.</li>
+                  </ol>
+                  <button class="btn price-btn">Select</button>
+                </div>
+            </section>
+        </div>
+        
+        <footer>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <span> &copy; Chinmoy Biswas </span>
+        </footer>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

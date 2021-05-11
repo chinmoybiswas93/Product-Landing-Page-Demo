@@ -1,0 +1,358 @@
+/** @format */
+:root {
+  --black: rgba(11, 11, 11, 0.774);
+  --darkblue: rgba(3, 3, 92, 0.925);
+  --darkgreen: rgb(3, 82, 3);
+  --black-ass: rgba(26, 25, 25, 0.562);
+  --text-color-black: rgba(0, 0, 0, 0.774);
+  --text-color-white: rgba(255, 255, 255, 0.822);
+  --red: rgba(230, 32, 6, 0.959);
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Farro", sans-serif;
+}
+body {
+  background-color: black;
+}
+#main {
+  position: relative;
+}
+header {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  min-height: 75px;
+  padding: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--black);
+  z-index: 100;
+}
+.logo {
+  width: 50vw;
+  margin-left: 3%;
+}
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  font-weight: 200;
+  font-size: 0.8rem;
+  width: 50vw;
+}
+nav > ul {
+  width: 45vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+nav > ul li {
+  list-style: none;
+  padding: 5px 15px;
+  border-radius: 3px;
+  transition: 0.3s ease-out;
+}
+nav > ul li:hover {
+  background-color: var(--red);
+}
+
+nav > ul li a {
+  color: var(--text-color-white);
+  text-decoration: none;
+}
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(230, 32, 6, 0.959);
+}
+#hero > h2 {
+  margin: 100px auto 20px auto;
+  word-wrap: break-word;
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-color-black);
+}
+#hero > p {
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-bottom: 10%;
+  width: 70vw;
+}
+::placeholder {
+  color: var(--text-color-black);
+  font-weight: 300;
+}
+#hero input[type="email"],
+#hero input[type="text"] {
+  width: 80%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 2px solid var(--black);
+  outline: none;
+  transition: 0.5s;
+  background: transparent;
+  color: var(--text-color-white);
+  margin-bottom: 20px;
+}
+#hero input[type="text"]:focus,
+#hero input[type="email"]:focus {
+  border: 2px solid var(--text-color-white);
+}
+
+#hero input[type="submit"] {
+  max-width: 150px;
+  width: 80%;
+  height: 40px;
+  margin: 15px 0;
+  border: 2px solid var(--black);
+  color: var(--text-color-white);
+  background-color: var(--black);
+}
+#hero input[type="submit"]:hover {
+  border: 2px solid var(--text-color-white);
+  background-color: transparent;
+}
+.btn {
+  padding: 5px 20px;
+  font-weight: 200;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: transparent;
+  transition: 0.3s ease;
+  transform: scale(1.25);
+}
+.grid {
+  display: flex;
+}
+#services {
+  padding-top: 80px;
+  height: 100vh;
+  width: 100%;
+  background: var(--darkblue);
+}
+#services .icon {
+  transform: scale(1.125);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  width: 20vw;
+  opacity: 0.85;
+  position: relative;
+  bottom: 12px;
+}
+#services .description {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  max-width: 90vw;
+  justify-content: center;
+  text-align: left;
+}
+
+#services h2 {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--text-color-white);
+}
+#services p {
+  font-size: 0.8rem;
+  color: var(--text-color-white);
+}
+.explore-btn {
+  background-color: transparent;
+  height: 30px;
+  width: 130px;
+  color: var(--text-color-white);
+  border: 2px solid var(--text-color-white);
+  border-radius: 5px;
+  margin-top: 15px;
+  justify-self: flex-end;
+}
+.explore-btn:hover {
+  background-color: var(--text-color-black);
+}
+#process {
+  padding-top: 100px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--darkgreen);
+  align-items: center;
+  color: var(--text-color-white);
+  text-align: center;
+}
+#process iframe {
+  width: 60vw;
+  height: 40vh;
+}
+#process h3,
+p {
+  padding: 20px;
+}
+#pricing {
+  background-color: rgba(235, 14, 14, 0.589);
+  padding-top: 100px;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.product {
+  display: flex;
+  background-color: transparent;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  height: 350px;
+  margin: 10px;
+  border: 2px solid var(--black);
+  border-radius: 5px;
+}
+.product > .level {
+  background-color: var(--black);
+  color: var(--text-color-white);
+  padding: 15px;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.product > h2 {
+  margin-top: 15px;
+  color: var(--text-color-white);
+}
+.product > ol {
+  margin: 15px 0;
+  color: var(--text-color-white);
+}
+.product > ol > li {
+  padding: 5px 0;
+}
+li {
+  list-style: none;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+.price-btn {
+  background-color: var(--black);
+  border: 1px solid var(--text-color-white);
+  color: var(--text-color-white);
+}
+
+footer {
+  background-color: rgb(8, 8, 8);
+  padding: 20px;
+  height: 10vh;
+}
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 15px;
+  list-style: none;
+}
+footer > ul > li > a {
+  text-decoration: none;
+  color: var(--text-color-white);
+}
+footer > ul > li > a:hover {
+  color: var(--red);
+  transition: 0.3s ease-in;
+}
+footer > span {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.7rem;
+  color: var(--text-color-white);
+  padding: 15px;
+}
+@media (max-width: 650px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+  .logo > img {
+    margin: 0 auto;
+  }
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  nav > ul {
+    flex-direction: column;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+  #hero {
+    margin-top: 200px;
+    width: 100%;
+    min-height: 100vh;
+  }
+  #hero h2 {
+    width: 50%;
+    font-size: 1.5rem;
+  }
+  #services {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding-top: 200px;
+    text-align: center;
+  }
+
+  #services .icon {
+    display: none;
+  }
+  #services .description {
+    width: 80vw;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+  }
+  #process {
+    padding-top: 200px;
+  }
+  #pricing {
+    height: auto;
+    flex-direction: column;
+    padding-top: 200px;
+  }
+  .product {
+    width: 60%;
+  }
+}
